@@ -1,72 +1,75 @@
 # Digital Signal Processing Lab Series
 
-This repository contains a comprehensive set of Jupyter notebooks developed as part of a digital signal processing (DSP) course. The labs are designed to build hands-on experience with Python tools and concepts fundamental to the analysis, synthesis, and manipulation of discrete-time signals.
-
-## 📁 Repository Structure
-
-Each notebook focuses on a specific signal processing concept or toolset. The labs are designed to progressively build your understanding of core DSP topics, from signal generation to spectral analysis.
+This repository contains a collection of Jupyter notebooks developed as part of an applied digital signal processing (DSP) lab sequence. The goal of this project is to build intuition and implementation skills across a range of core DSP topics using Python, NumPy, SciPy, and other open-source tools. Each notebook represents a stand-alone topic with practical examples and visualizations to reinforce signal processing theory through hands-on coding.
 
 ---
 
-### 🧰 Python Setup and Fundamentals
-Covers the basics of working in a Jupyter environment, installing required packages, and reviewing core Python functionalities relevant to signal processing workflows.
+### 1. Python Setup and Environment Configuration
+
+Introduces the Jupyter Notebook interface and essential Python packages used throughout the lab series. This notebook ensures the development environment is fully equipped for scientific computing, including instructions for package management and custom function integration for DSP workflows.
 
 ---
 
-### 🎲 Random Signal Generation
-Focuses on the creation and analysis of random signals. Demonstrates custom random number generators and introduces signal properties like mean, variance, and correlation.
+### 2. Random Signal Generation and Statistical Analysis
+
+Demonstrates how to generate pseudo-random discrete-time signals and explores their statistical properties such as mean, variance, and autocorrelation. Highlights practical use cases of random signals in system testing and noise modeling. Includes custom implementation of uniform and Gaussian generators.
 
 ---
 
-### ⏱️ Sampling and Reconstruction
-Explores the principles of signal sampling, aliasing, and ideal reconstruction. Visual and numerical examples illustrate how improper sampling affects signal integrity.
+### 3. Sampling Theory and Signal Reconstruction
 
+Covers the fundamentals of sampling continuous-time signals, reconstruction using sinc interpolation, and the critical role of the Nyquist rate. Visualization of aliasing artifacts underscores how under-sampling distorts signal representation in the discrete domain.
 
----
-
-### 🔁 Frequency Response and Moving Average Filter
-Introduces linear time-invariant (LTI) systems, frequency response analysis, and simple filtering using moving average techniques.
-
+![Aliasing Visualization](images/aliasing_example.png)
 
 ---
 
-### 🧮 IIR Filter Design
-Discusses Infinite Impulse Response (IIR) filter structures, their frequency responses, and how to implement and analyze Butterworth and Chebyshev filters in Python.
+### 4. Frequency Response and Time-Domain Filtering
+
+Analyzes the behavior of linear time-invariant (LTI) systems through their frequency response. Implements moving average (MA) filters and explores the trade-offs between time-domain smoothing and frequency-domain attenuation. This notebook lays the groundwork for understanding filter design in later modules.
+
+![Frequency Response](images/freq_response_ma.png)
 
 ---
 
-### 🔳 FIR Filter Design with Windows
-Focuses on Finite Impulse Response (FIR) filter design using windowing techniques. Includes window types (e.g., Hamming, Blackman) and their effects on filter performance.
+### 5. IIR Filter Design and Implementation
+
+Focuses on Infinite Impulse Response (IIR) filters, particularly Butterworth and Chebyshev designs. Walks through filter specification, design via `scipy.signal`, and implementation in both difference equation and transfer function forms. Emphasizes how pole-zero placement influences system dynamics.
 
 ---
 
-### 🔄 Filter Structures and Quantization
-Examines practical issues in digital filter implementation such as cascade and parallel structures, as well as the effects of finite precision and quantization errors.
+### 6. FIR Filter Design Using Windowing Techniques
+
+Introduces Finite Impulse Response (FIR) filter design with various window functions (e.g., Hamming, Blackman). Compares ideal versus realizable filters and visualizes how windowing affects frequency resolution and side lobe behavior. Design examples include bandpass and high-pass filters.
 
 ---
 
-### 🔬 Discrete Fourier Transform (DFT)
-Covers the theoretical foundation and implementation of the DFT. Demonstrates signal decomposition and frequency-domain interpretation using FFT tools.
+### 7. Filter Structures and Quantization Effects
 
-
----
-
-### 📊 Spectral Analysis and Time Windowing
-Final module on spectral estimation, demonstrating how windowing affects frequency resolution and leakage. Includes comparisons of different window types and spectral plots for compound signals.
-
+Explores different realizations of digital filters, including direct form, cascade, and parallel implementations. Evaluates the numerical impact of finite word length and quantization noise. The notebook also introduces fixed-point arithmetic simulation for embedded system considerations.
 
 ---
 
-## ⚙️ Requirements
+### 8. Discrete Fourier Transform and Spectral Analysis
+
+Applies the Discrete Fourier Transform (DFT) to analyze the frequency content of signals. Highlights the relationship between time-domain sampling and frequency resolution. Uses FFT algorithms to visualize spectral leakage and the impact of different time-windowing strategies.
+
+![Spectral Leakage](images/spectral_leakage.png)
+
+---
+
+## 🔧 Requirements
+
 - Python 3.x  
-- `numpy`, `scipy`, `matplotlib`, `ipython`, `jupyter`, `scikit-dsp-comm`, etc.
+- Core libraries: `numpy`, `scipy`, `matplotlib`, `jupyter`, `scikit-dsp-comm`
 
-To install all dependencies:
+To install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
 ---
 
-## 📚 License
-This project is for educational use only. All rights reserved by the original authors or instructors unless stated otherwise.
+## 📘 License
+
+This work is intended for educational and research purposes. Content builds on publicly available tools and academic materials used in digital signal processing courses.
