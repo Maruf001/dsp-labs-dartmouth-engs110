@@ -21,14 +21,12 @@ Focuses on the creation and analysis of random signals. Demonstrates custom rand
 ### ⏱️ Sampling and Reconstruction
 Explores the principles of signal sampling, aliasing, and ideal reconstruction. Visual and numerical examples illustrate how improper sampling affects signal integrity.
 
-![Aliasing Visualization](images/aliasing_example.png)
 
 ---
 
 ### 🔁 Frequency Response and Moving Average Filter
 Introduces linear time-invariant (LTI) systems, frequency response analysis, and simple filtering using moving average techniques.
 
-![Frequency Response](images/freq_response_ma.png)
 
 ---
 
@@ -50,14 +48,12 @@ Examines practical issues in digital filter implementation such as cascade and p
 ### 🔬 Discrete Fourier Transform (DFT)
 Covers the theoretical foundation and implementation of the DFT. Demonstrates signal decomposition and frequency-domain interpretation using FFT tools.
 
-![DFT Output](images/dft_example.png)
 
 ---
 
 ### 📊 Spectral Analysis and Time Windowing
 Final module on spectral estimation, demonstrating how windowing affects frequency resolution and leakage. Includes comparisons of different window types and spectral plots for compound signals.
 
-![Spectral Leakage](images/spectral_leakage.png)
 
 ---
 
