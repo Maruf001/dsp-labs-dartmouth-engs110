@@ -1,6 +1,6 @@
 # Digital Signal Processing Lab Series
 
-This repository contains a collection of Jupyter notebooks developed as part of an applied digital signal processing (DSP) lab sequence. The goal of this project is to build intuition and implementation skills across a range of core DSP topics using Python, NumPy, SciPy, and other open-source tools. Each notebook represents a stand-alone topic with practical examples and visualizations to reinforce signal processing theory through hands-on coding.
+This repository contains a collection of Jupyter notebooks for my digital signal processing (DSP) lab sequence in calls ENGS110. The goal of the course was to build intuition and implementation skills across a range of core DSP topics using Python, NumPy, SciPy, and other open-source tools. Each notebook represents a stand-alone topic with practical examples and visualizations to reinforce signal processing theory through hands-on coding.
 
 ---
 
