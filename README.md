@@ -20,7 +20,6 @@ Demonstrates how to generate pseudo-random discrete-time signals and explores th
 
 Covers the fundamentals of sampling continuous-time signals, reconstruction using sinc interpolation, and the critical role of the Nyquist rate. Visualization of aliasing artifacts underscores how under-sampling distorts signal representation in the discrete domain.
 
-![Aliasing Visualization](images/aliasing_example.png)
 
 ---
 
@@ -28,7 +27,6 @@ Covers the fundamentals of sampling continuous-time signals, reconstruction usin
 
 Analyzes the behavior of linear time-invariant (LTI) systems through their frequency response. Implements moving average (MA) filters and explores the trade-offs between time-domain smoothing and frequency-domain attenuation. This notebook lays the groundwork for understanding filter design in later modules.
 
-![Frequency Response](images/freq_response_ma.png)
 
 ---
 
@@ -54,7 +52,6 @@ Explores different realizations of digital filters, including direct form, casca
 
 Applies the Discrete Fourier Transform (DFT) to analyze the frequency content of signals. Highlights the relationship between time-domain sampling and frequency resolution. Uses FFT algorithms to visualize spectral leakage and the impact of different time-windowing strategies.
 
-![Spectral Leakage](images/spectral_leakage.png)
 
 ---
 
